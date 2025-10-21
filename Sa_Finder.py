@@ -169,9 +169,9 @@ def find_best_frequencies(spectrogram, sr, ratio_list):
 def fold_frequency(freq):
     if freq == 0:
         return 0
-    while freq < 107:
+    while freq < 110:
         freq *= 2
-    while freq > 214:
+    while freq > 220:
         freq /= 2
     return freq
 
@@ -318,3 +318,4 @@ def process_all_songs(TOP_FREQ_PERCENTAGE=10):
 # ========== RUN ==========
 if __name__ == "__main__":
     process_all_songs(TOP_FREQ_PERCENTAGE)
+
